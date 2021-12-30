@@ -1,0 +1,11 @@
+<h1>投稿</h1>
+<%= form_with model: @books, local:true do |f| %>
+  <h4>タイトル</h4>
+  <%= f.label :title %>
+  <%= f.text_filed :title %>
+  <h4>内容</h4>
+  <%= f.label :body %>
+  <%= f.text_filed :body %>
+  <div>
+    <%= f.submit %>
+  </div>
